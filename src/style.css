@@ -1,0 +1,219 @@
+body {
+  background-color: lightgray;
+  font-family: "Segeo UI", Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgb(0, 130, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 130, 135, 1) 0%,
+    rgba(2, 52, 136, 1) 100%
+  );
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.pageTitle {
+  padding: 20px 30px;
+  font-size: 1em;
+  flex: 1;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 0px 30px;
+}
+
+.topMenu > li {
+  cursor: pointer;
+}
+
+.userInfo {
+  padding: 0px 20px;
+}
+
+.userInfo > img {
+  padding: 10px;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 87.5vh;
+}
+
+.mainLogo {
+  text-align: center;
+  padding: 20px;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menuContainer {
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 2px 8px #888888;
+  padding-bottom: 100px;
+}
+
+.menuTitle {
+  font-size: 1.8em;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.menuList > li {
+  margin: 10px;
+  padding: 5px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.menuList > li:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+footer {
+  background: rgb(0, 130, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 130, 135, 1) 0%,
+    rgba(2, 52, 136, 1) 100%
+  );
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #008287;
+  min-width: 100px;
+  color: white;
+  transition: all 0.3s;
+}
+.primary:hover {
+  background-color: #0b979c;
+}
+.primary:active {
+  transform: scale(0.95);
+  background-color: #1eb1b6;
+}
+
+.searchMenu {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchName {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.searchPhone {
+  width: 100%;
+  max-width: 300px;
+}
+
+table,
+th,
+td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* ************************* */
+
+.content {
+  align-items: center;
+}
+.homeMenu {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1060px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homeButton {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 246, 246, 1) 46%,
+    rgb(217, 226, 248) 100%
+  );
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px #888888;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.homeButton:hover {
+  transform: scale(1.05);
+}
+.homeButton:active {
+  transform: scale(0.95);
+}
+
+.homeBTtitle {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.homeBTicon,
+.homeBTicon > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
