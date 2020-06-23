@@ -19,6 +19,16 @@ header {
   align-items: center;
 }
 
+.Page {
+  margin: 0px 30px;
+  display: flex;
+}
+
+.pageContent {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .pageTitle {
   padding: 20px 30px;
   font-size: 1em;

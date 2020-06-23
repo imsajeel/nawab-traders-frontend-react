@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Purchase() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Purchase</h1>
+    </div>
+  );
 }

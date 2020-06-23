@@ -1,9 +1,9 @@
 import React from "react";
 
-const CustomerLedger = ({ setRoute }) => {
+const CustomerLedger = () => {
   return (
     <div>
-      <h1 onClick={() => setRoute("CementMenu")}>{" < "}Main Menu</h1>
+      <h1>Customer's Ledger</h1>
     </div>
   );
 };

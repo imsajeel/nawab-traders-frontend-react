@@ -1,9 +1,9 @@
 import React from "react";
 
-const CashBook = ({ setRoute }) => {
+const CashBook = () => {
   return (
     <div>
-      <h1>CashBook</h1>
+      <h1>Cash Book</h1>
     </div>
   );
 };
