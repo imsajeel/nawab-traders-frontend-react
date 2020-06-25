@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PopUp from "../../components/Header/PopUp";
+import PopUp from "../../components/PopUp/PopUp";
 
 class CustomerLedger extends Component {
   constructor(props) {
@@ -61,7 +61,7 @@ class CustomerLedger extends Component {
         </div>
         <table
           style={{ width: "100%", maxWidth: "1000px" }}
-          className="ledgerTable"
+          className="ledgerTable default"
         >
           <tr>
             <th>ID</th>

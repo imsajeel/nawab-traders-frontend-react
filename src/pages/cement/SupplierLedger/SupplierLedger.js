@@ -46,7 +46,7 @@ class SupplierLedger extends Component {
         </div>
         <table
           style={{ width: "100%", maxWidth: "1000px" }}
-          className="ledgerTable"
+          className="ledgerTable default"
         >
           <tr>
             <th>ID</th>

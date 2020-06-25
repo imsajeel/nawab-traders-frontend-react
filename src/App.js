@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <CementPage />
-      <div className="flaotRightBottom">Sajeel</div>
+      {/* <div className="flaotRightBottom">Sajeel</div> */}
     </div>
   );
 };

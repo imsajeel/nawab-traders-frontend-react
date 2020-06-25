@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import CementMenu from "./CementMenu";
 import CementRoute from "./CementRoute";
 
@@ -18,6 +19,7 @@ export default function CementPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
