@@ -1,9 +1,13 @@
 body {
   background-color: lightgray;
   font-family: "Segeo UI", Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin: 0px;
+}
+
+.App {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -14,12 +18,12 @@ header {
     rgba(2, 52, 136, 1) 100%
   );
   color: white;
-  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .Page {
+  flex: 1;
   margin: 0px 30px;
   display: flex;
   flex-wrap: wrap;
@@ -302,7 +306,6 @@ form.addForm {
   margin: auto;
   margin-bottom: 30px;
   display: grid;
-  grid-column: 2;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
   grid-template-columns: 150px 1fr;
@@ -324,4 +327,18 @@ form.addForm {
 
 .centerText {
   text-align: center;
+}
+
+@media only screen and (max-width: 905px) {
+  .sideMenu {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 560px) {
+  form.addForm {
+    grid-template-columns: 1fr;
+  }
+  .addForm > label {
+    text-align: left;
+  }
 }

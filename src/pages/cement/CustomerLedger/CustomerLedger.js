@@ -78,17 +78,19 @@ class CustomerLedger extends Component {
               className="item"
               onClick={() => this.selectItem(index)}
             >
-              <td>{cust.id_cust}</td>
-              <td>{cust.name_cust}</td>
-              <td>{cust.address_cust}</td>
-              <td>{cust.phone}</td>
+              <td>{cust.cust_id}</td>
+              <td>{cust.name}</td>
+              <td>{cust.address}</td>
               <td>
-                {cust.balance_cust < 0
-                  ? cust.balance_cust * -1
-                  : cust.balance_cust}
+                {cust.ph1}
+                <br />
+                {cust.ph2}
+                <br />
+                {cust.ph3}
               </td>
-              <td className={cust.balance_cust <= 0 ? "Credit" : "Debit"}>
-                {cust.balance_cust <= 0 ? "Credit" : "Debit"}
+              <td>{cust.balance < 0 ? cust.balance * -1 : cust.balance}</td>
+              <td className={cust.balance <= 0 ? "Credit" : "Debit"}>
+                {cust.balance <= 0 ? "Credit" : "Debit"}
               </td>
             </tr>
           ))}
