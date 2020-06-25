@@ -165,6 +165,11 @@ td {
   border-collapse: collapse;
 }
 
+tr.item:hover {
+  background-color: #dfdfdf;
+  cursor: pointer;
+}
+
 input {
   border: 1px solid gray;
   border-radius: 10px;
@@ -226,4 +231,55 @@ button:focus {
   width: 100px;
   height: 100px;
   margin-right: 20px;
+}
+
+.PopUpBack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.PopUp_cont {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.Credit {
+  color: red;
+}
+
+.Debit {
+  color: green;
+}
+
+nav {
+  background: rgb(0, 130, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 130, 135, 1) 0%,
+    rgba(2, 52, 136, 1) 100%
+  );
+  padding: 0px 30px;
+  border-radius: 50px;
+  display: flex;
+}
+
+nav > li {
+  padding: 10px;
+  min-width: 60px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+nav > li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
