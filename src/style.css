@@ -175,6 +175,7 @@ table.default th,
 table.default td {
   border: 1px solid gray;
   border-collapse: collapse;
+  padding: 10px;
 }
 
 table.default tr.item:hover {
@@ -264,11 +265,11 @@ button:focus {
   width: 300px;
 }
 
-.Credit {
+.Debit {
   color: red;
 }
 
-.Debit {
+.Credit {
   color: green;
 }
 
@@ -327,6 +328,15 @@ form.addForm {
 
 .centerText {
   text-align: center;
+}
+
+h3.green {
+  color: #008287;
+}
+
+.boxTable {
+  height: 300px;
+  overflow-y: scroll;
 }
 
 @media only screen and (max-width: 905px) {

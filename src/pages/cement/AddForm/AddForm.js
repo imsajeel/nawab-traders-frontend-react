@@ -3,7 +3,7 @@ import AddFormMenu from "./AddFormMenu";
 import AddFormRoute from "./AddFormRoute";
 
 export default function AddForm() {
-  const [formRoute, setFormRoute] = useState("add_cust");
+  const [formRoute, setFormRoute] = useState("add_sup");
   return (
     <div>
       <h1>Add Form</h1>
