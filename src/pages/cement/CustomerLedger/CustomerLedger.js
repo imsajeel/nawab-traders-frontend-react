@@ -15,17 +15,9 @@ const CustomerLedger = () => {
 
   const handleFilter = () => {
     if (search.searchName) {
-      if (search.searchName !== "") {
-        setSearchData(
-          custList.filter((cust) =>
-            cust.name.toLowerCase().includes(search.searchName)
-          )
-        );
-      }
-    } else if (search.searchPhone) {
       setSearchData(
         custList.filter((cust) =>
-          cust.ph1.toLowerCase().includes(search.searchPhone)
+          cust.name.toLowerCase().includes(search.searchName)
         )
       );
     }
