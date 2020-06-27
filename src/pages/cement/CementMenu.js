@@ -5,7 +5,7 @@ const CementMenu = ({ setRoute }) => {
     <div className="container contMenu">
       <div className="cont_title">Cement Menu</div>
       <div className="Menu">
-        <li onClick={() => setRoute("DataEntry")}>Data Entry</li>
+        <li onClick={() => setRoute("data_entry")}>Data Entry</li>
         <li onClick={() => setRoute("cust_ledger")}>Customer's Ledger</li>
         <li onClick={() => setRoute("supplier_ledger")}>Supplier's Ledger</li>
         <li onClick={() => setRoute("bank_ledger")}>Bank's Ledger</li>

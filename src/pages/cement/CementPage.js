@@ -5,7 +5,7 @@ import CementMenu from "./CementMenu";
 import CementRoute from "./CementRoute";
 
 export default function CementPage() {
-  const [route, setRoute] = useState("add_form");
+  const [route, setRoute] = useState("data_entry");
 
   return (
     <div className="App">

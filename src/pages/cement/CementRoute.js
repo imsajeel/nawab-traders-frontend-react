@@ -14,7 +14,7 @@ import AddForm from "./AddForm/AddForm";
 
 const CementRoute = ({ route, setRoute }) => {
   switch (route) {
-    case "DataEntry":
+    case "data_entry":
       return <DataEntry />;
     case "CementMenu":
       return <CementMenu />;

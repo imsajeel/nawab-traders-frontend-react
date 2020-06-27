@@ -68,21 +68,23 @@ export default function AddCust() {
     <div>
       <h3 className="centerText">Add Customer</h3>
       <form className="addForm" onSubmit={handleSubmit}>
-        <label>Name:</label>
+        <label>Name:*</label>
         <input
           type="text"
           name="name"
           placeholder="Enter Customer's Name"
           value={name}
           onChange={handleChange}
+          required
         />
-        <label>Shop Name:</label>
+        <label>Shop Name:*</label>
         <input
           type="text"
           name="shopname"
           placeholder="Enter Shop Name"
           value={shopname}
           onChange={handleChange}
+          required
         />
 
         <label>ID CARD#:</label>
@@ -103,21 +105,23 @@ export default function AddCust() {
           onChange={handleChange}
         />
 
-        <label>Address:</label>
+        <label>Address:*</label>
         <textarea
           name="address"
           placeholder="Enter address"
           value={address}
           onChange={handleChange}
+          required
         />
 
-        <label>Phone# 1:</label>
+        <label>Phone# 1:*</label>
         <input
           type="text"
           name="ph1"
           placeholder="Enter phone"
           value={ph1}
           onChange={handleChange}
+          required
         />
 
         <label>Phone# 2:</label>

@@ -64,31 +64,34 @@ const AddBank = () => {
     <div>
       <h3 className="centerText">Add Bank</h3>
       <form className="addForm" onSubmit={handleSubmit}>
-        <label>Title of Account:</label>
+        <label>Title of Account:*</label>
         <input
           type="text"
           name="title_acc"
           placeholder="Enter Bank Name"
           value={title_acc}
           onChange={handleChange}
+          required
         />
 
-        <label>Bank Name:</label>
+        <label>Bank Name:*</label>
         <input
           type="text"
           name="name"
           placeholder="Enter Bank Name"
           value={name}
           onChange={handleChange}
+          required
         />
 
-        <label>Branch Name:</label>
+        <label>Branch Name:*</label>
         <input
           type="text"
           name="branch"
           placeholder="Enter Bank Name"
           value={branch}
           onChange={handleChange}
+          required
         />
 
         <label>Branch Code#:</label>
@@ -100,13 +103,14 @@ const AddBank = () => {
           onChange={handleChange}
         />
 
-        <label>Phone#:</label>
+        <label>Phone#:*</label>
         <input
           type="text"
           name="ph"
           placeholder="Enter phone"
           value={ph}
           onChange={handleChange}
+          required
         />
 
         <label>Email:</label>
@@ -118,12 +122,13 @@ const AddBank = () => {
           onChange={handleChange}
         />
 
-        <label>Address:</label>
+        <label>Address:*</label>
         <textarea
           name="address"
           placeholder="Enter address"
           value={address}
           onChange={handleChange}
+          required
         />
 
         <label>Opening Balance:</label>

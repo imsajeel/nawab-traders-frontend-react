@@ -103,6 +103,7 @@ const CustomerLedger = () => {
         {custSelection.name
           ? custSelection.name + " from " + custSelection.address
           : "Please select a row"}
+        <button style={{ marginLeft: "20px" }}>Edit this Customer</button>
       </h3>
       <div className="calendar">
         <label htmlFor="fromDate">From Date:</label>
