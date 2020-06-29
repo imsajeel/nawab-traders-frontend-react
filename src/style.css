@@ -137,19 +137,27 @@ button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  background-color: rgb(240, 240, 240);
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: rgb(216, 216, 216);
+}
+button:active {
+  transform: scale(0.95);
+  background-color: rgb(255, 255, 255);
 }
 
 .primary {
   background-color: #008287;
   min-width: 100px;
   color: white;
-  transition: all 0.3s;
 }
 .primary:hover {
   background-color: #0b979c;
 }
 .primary:active {
-  transform: scale(0.95);
   background-color: #1eb1b6;
 }
 
@@ -302,7 +310,8 @@ nav > li:hover {
 /*  Add Form  */
 /* ********** */
 
-form.addForm {
+form.addForm,
+form.entryForm {
   width: 90%;
   padding: 10px;
   margin: auto;
@@ -313,11 +322,22 @@ form.addForm {
   grid-template-columns: 150px 1fr;
 }
 
-.addForm > label {
+form.entryForm {
+  grid-template-columns: 150px 1fr 150px 1fr;
+}
+
+.entryForm > .col-2-5 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.addForm > label,
+.entryForm > label {
   text-align: right;
 }
 
-.addForm > textarea {
+.addForm > textarea,
+.entryForm > textarea {
   max-width: 300px;
   min-width: 300px;
   min-height: 70px;

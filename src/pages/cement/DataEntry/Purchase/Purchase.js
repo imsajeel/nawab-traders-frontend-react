@@ -4,7 +4,7 @@ export default function Purchase() {
   return (
     <div>
       <h3>Purchase</h3>
-      <form>
+      <form className="entryForm">
         <label>StockBook#: (opt)</label>
         <input
           type="text"
@@ -38,10 +38,20 @@ export default function Purchase() {
         <label>Quantity:</label>
         <input type="number" name="quantity" placeholder="Quantity of bags" />
 
-        <h1>---Selection Box---</h1>
-        <button className="primary">Add</button>
-        <h1>---Added Feilds---</h1>
-        <button className="primary">Post</button>
+        <div className="col-2-5">
+          <h1>---Selection Box---</h1>
+        </div>
+
+        <div className="col-2-5" style={{ textAlign: "right" }}>
+          <button className="primary">Add</button>
+        </div>
+
+        <div className="col-2-5">
+          <h1>---Added Feilds---</h1>
+        </div>
+        <div className="col-2-5" style={{ textAlign: "right" }}>
+          <button className="primary">Post</button>
+        </div>
       </form>
     </div>
   );

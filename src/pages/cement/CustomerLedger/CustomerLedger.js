@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { url } from "../../../api/api";
 
+// import CustTable from "../../components/Table/CustTable";
+
 const CustomerLedger = () => {
   const [custList, setCustList] = useState([]);
   const [custSelection, setCustSelection] = useState({});
@@ -65,7 +67,11 @@ const CustomerLedger = () => {
 
   return (
     <div>
+      {/* <h1>Customer's Ledger</h1>
+
+      <CustTable setCustSelection={setCustSelection} /> */}
       <h1>Customer's Ledger</h1>
+
       <div className="searchMenu">
         <input
           type="search"
